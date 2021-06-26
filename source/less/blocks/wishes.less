@@ -1,0 +1,147 @@
+.wishes {
+  background: 
+  linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0) 100%),
+  linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.wishes__button-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wishes__button-block label {
+  cursor: pointer;
+}
+
+.wishes__button-block .button {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.wishes__offer {
+  .headers-typographic-theme;
+  width: 330px;
+  margin: 150px 0 100px;
+}
+
+.wishes__form .wishes__form-unit:last-of-type label {
+  margin: -1px;
+}
+
+.wishes__form-unit {
+  .small-typographic-theme;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.wishes__form-unit label {
+  margin-bottom: -5px;
+}
+
+.wishes__form-unit input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  color: inherit;
+}
+
+
+.wishes__form-checkbox-unit {
+  margin-top: -10px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 28px auto;
+  grid-gap: 20px;
+}
+
+.wishes__form-checkbox-unit a {
+  // text-decoration: underline;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.feedback__custom-checkbox {
+  // position: absolute;
+  // left: -40px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.feedback__checkbox:checked + .feedback__custom-checkbox {
+  background-image: url("../img/icons/mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__checkbox:focus + .feedback__custom-checkbox {
+  outline: none;
+  box-shadow: 0 0 5px 3px #202020;
+}
+
+
+
+@media (min-width: 1200px) {
+  .wishes {
+    padding: 200px;
+  }
+
+  .wishes__button-block--mobile-only {
+    display: none;
+  }
+
+  .wishes__offer {
+    .headers-typographic-theme;
+    width: auto;
+    margin: 0 0 148px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .wishes__form .wishes__form-unit:last-of-type label {
+    margin-bottom: -4px;
+  }
+
+  .wishes__form {
+    display: grid;
+    grid-template-areas:
+      "name phone button" 
+      "tell email button" 
+      "checkbox . .";
+  }
+
+  .wishes__form-unit--name {
+    grid-area: name;
+  }
+
+  .wishes__form-unit--phone {
+    grid-area: phone;
+  }
+
+  .wishes__form-unit--email {
+    grid-area: email;
+  }
+
+  .wishes__form-unit--tell-about-project {
+    grid-area: tell;
+  }
+
+  .wishes__form-checkbox-unit {
+    grid-area: checkbox;
+  }
+
+  .wishes__form  .wishes__button-block {
+    grid-area: button;
+  }
+  
+}

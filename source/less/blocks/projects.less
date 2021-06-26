@@ -1,0 +1,123 @@
+.projects__project-list {
+  .unordered-list
+}
+
+.projects__project-item {
+  max-width: 375px;
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
+
+.projects__project-item--all-projects {
+  display: none;
+}
+
+.projects__project-item--finance {
+  background-color: #00338D;
+}
+
+.projects__project-item--stalker {
+  background-color: #16172C;
+}
+
+.projects__project-item--unihome {
+  background-color: #F06E43
+}
+
+.projects__project-item--indihome {
+  background-color: #fff;
+  color: #202020;
+}
+
+.projects__project-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects__project-item--finance .projects__project-logo {
+  width: 134px;
+  height: 48px;
+}
+
+.projects__project-name {
+  margin: auto 0 0 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.projects__project-description {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.projects__metatron-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.projects__metatron-content {
+  padding: 20px;
+  min-height: 275px;
+  .flex-container;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FF941A;
+  position: relative;
+}
+
+.projects__metatron-tags-list {
+  .unordered-list;
+}
+
+.projects__metatron-content .projects__project-logo {
+  position: absolute;
+  top: 50%;
+  left: 110px;
+}
+
+.projects__metatron-description h3,
+.projects__metatron-description p {
+  margin: 0;
+  padding: 0;
+}
+
+.projects__metatron-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.projects__metatron-brand a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 1200px) {
+  .projects__project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__project-item {
+    max-width: none;
+    min-height: 580px;
+  }
+
+  .projects__project-item--all-projects {
+    display: flex;
+    background-color: #202020;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>ТАЙТЛ</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible", content="IE=edge,chrome=1">
+
+	<meta content="true" name="HandheldFriendly"/>
+	<meta content="width" name="MobileOptimized"/>
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+
+  <!-- кейвордс? -->
+  <meta name="description" content="ДЕСКРИПШН">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Шрифты пока оставляю закомментированными, на случай, если они всё-таки понадобятся. В продакшен-версии удалю всё лишнее -->
+  
+  <!-- 100 -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-thin.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-thinitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 200 -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-ultralight.ttf as="font" type="font/ttf" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-ultralightitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 300 -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-lightitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 400 -->
+  <link rel="preload" href="fonts/Gilroy/gilroy-regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-regularitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 500 -->
+  <link rel="preload" href="fonts/Gilroy/gilroy-medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-mediumitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 600 -->
+  <link rel="preload" href="fonts/Gilroy/gilroy-semibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-semibolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 700 -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-bold.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-bolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 800 -->
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-extrabolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- 900 -->
+  <link rel="preload" href="fonts/Gilroy/gilroy-black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-blackitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+  <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> -->
+
+  <script src="js/picturefill.min.js" async></script>
+</head>
+
+<!--
+  Issues:
+    - Затык с гридами в секции вишез и футере на десктопе
+    - Горизонтальный скролл на ноутбучных ширинах
+    - Линк-прелоад на ттф, а вофф-2 (сверься по инструкции)
+
+    - Пока не соображу, как избавиться от горизонтального скролла из-за призрачного текста. Но это не сложно, вроде, просто надо подумать. Эффект выезжающих из-за края экрана элементов. Чтобы текст откусывался и не выползал за контейнер. Совсем откусывался, а не только визуально. (375)Сделай пока картинкой, а поиски решения добавь себе в задачи
+    - Убери вектору размеры на уровне разметки, перенеси это дело в стили. Кстати, может то, что ты принял за растр, можно тоже в векторе экспортнуть?
+    - Вспомни как красиво делать ширину центровщику на десктопе
+    
+    - Бургерное меню. Пока без открывания (Реализация - Седона, оживление - Абожур)
+    - Якорь приделай. Пока без скриптов и отдельным блоком
+    - Заголовки не забудь везде нормальные прописать
+    - Нормально поля формы и телефоны-адреса (валидация!)
+    - Почисти код, параллельно фикся недопилки по своим комментариям
+    - Исправить имена класса в кастомных чекбоксах
+    - Валидация почты и телефона
+    - СВГ-шки соцсетей заинлайнить в стилях
+
+    - Избавиться от горизонтального скроллбара на ширине ноутбука
+
+    - Вообще в карточке Метатрона, наверное, лучше их собрать в одну картинку... посмотрю, когда все версии будут готовы и одобрены
+    - РЕТИНА!
+
+    - Когда на планшет+ перейдешь - ширину контейнера выстави на ширину макета, а в медиавыражениях где-то 1200 и начиная с этой ширины - десктоп. А мобилка пусть примерно до 450 тянется... потом уточни получше эти значения. Итого на планшеты и ноутбуки выпадает диапазон 450-1200
+    - Не забудь всем картинкам через пикчур ретину прикрутить. Декоративным тоже
+    - Мутный Сталкер
+    - Проверка БЭМа и структуры заголовков
+    - Валидатором пройдись
+    - Дескрипшн и кейвордз
+    - Контейнер походу вообще не понадобится
+    - Обязательно, по итогу, не забудь грохнуть все неиспользуемые шрифты! В том числе и фоллбэчные ттф-ы. Всё равно вряд ли остались браузеры, которые не поддерживают хотя бы вофф-1
+    - Нот мобайл (проекты и хедер, эталон в Седоне) - десктопный хэдер, исправить
+    - С тэгами пока засада, подумай об этом чуть позже. Тут или псевдокласс, или гриды. Или флоат?.. Пока сбрасываю правильный маргин.
+    - Кроссбраузерность
+    - Проставь пока заглушки шрефакм ссылок
+    
+-->
+
+<body>
+  <div class="container">
+
+    <header class="main-header">
+
+      <h1 class="visually-hidden">САМЫЙ ГЛАВНЫЙ ЗАГОЛОВОК</h1>
+
+      <nav class="main-header__navigation">
+        <img class="main-header__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
+        <ul class="main-header__navigation-list not-mobile">
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#about">Главная</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#production">Проекты</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#solutions">Отзывы</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#mission">Команда</a>
+          </li>
+          <li class="main-header__navigation-item">
+            <a class="main-header__navigation-link" href="#team">Контакты</a>
+          </li>
+        </ul>
+        <button class="main-header__open-menu-button"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+
+      <section class="main-header__solutions">
+        <h2 class="main-header__solutions-heading">Реализуем комплексные <br> it-решения для бизнеса</h2>
+        <!-- Кстати, чото вот сейчас думаю - это тоже на заголовок не сильно тянет. Для заголовка бы пожалуй подошло что-то типа "Наши решения". А визуально отобразить это... хотя тут 50 на 50, так что надо обсуждать. Вообще это не критичный момент -->
+        <div class="main-header__solutions-wrapper">
+          <ul class="main-header__solutions-list">
+            <li>
+              <a href="#" class="main-header__solution">Sites</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Crm</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Bitrix</a>
+            </li>
+            <li>
+              <a href="#" class="main-header__solution">Landing</a>
+            </li>
+          </ul>
+          <form class="main-header__solutions-form" action="">
+            <input type="text">
+            <button class="button" type="button"><span class="visually-hidden">Отправить</span></button>
+          </form>
+        </div>
+      </section>
+
+    </header>
+
+    <main>
+
+      <section class="projects">
+        <h2 class="visually-hidden">Наши проекты</h2>
+
+        <ul class="projects__project-list">
+          <li class="projects__project-item projects__project-item--metatron">
+            <div class="projects__metatron-container">
+              <div class="projects__metatron-content">
+                <ul class="projects__metatron-tags-list">
+                  <li class="projects__metatron-tag">#разработка</li>
+                  <li class="projects__metatron-tag">#маркетинг</li>
+                  <li class="projects__metatron-tag">#дизайн</li>
+                </ul>
+                <img class="projects__project-logo" src="img/metatron-1.png" alt="Логотип Metatron" width="98" height="127">
+                <div class="projects__metatron-description">
+                  <h3>Метатрон</h3>
+                  <p>Разработка сайта</p>
+                </div>
+              </div>
+              <div class="projects__metatron-brand">
+                <img src="img/metatron-2.svg" alt="Логотип Metatron">
+                <a href="">Перейти куда-то (спан, вх)</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="projects__project-item projects__project-item--finance">
+            <img class="projects__project-logo" src="img/finance.svg" alt="Логотип Finance" width="134" height="48">
+            <h3 class="projects__project-name">Кредитный брокер</h3>
+            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+          </li>
+
+          <!-- Так, что-то тут какая-то шляпа с чёткостью картинки. Экспортни ещё раз потом -->
+          <li class="projects__project-item projects__project-item--stalker">
+            <img class="projects__project-logo" src="img/stalker.svg" alt="Логотип Stalker" width="226" height="33">
+            <h3 class="projects__project-name">Лендинг каталог для продажи товара</h3>
+            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+          </li>
+
+          <li class="projects__project-item projects__project-item--unihome">
+            <img class="projects__project-logo" src="img/unihome.svg" alt="Логотип Юнихоум" width="95" height="95">
+            <h3 class="projects__project-name">Юнихоум новостройки в Екатеринбурге</h3>
+            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+          </li>
+
+          <li class="projects__project-item projects__project-item--indihome">
+            <img class="projects__project-logo" src="img/indihome.svg" alt="Логотип Indi home" width="75" height="75">
+            <h3 class="projects__project-name">Аренда спецтехники</h3>
+            <p class="projects__project-description">Посадочная страница аренды спецтехники</p>
+          </li>
+
+          <li class="projects__project-item projects__project-item--all-projects">
+            <div class="wishes__button-block">
+              <label for="all-projects">Все проекты</label>
+              <button class="button" id="all-projects"><span class="visually-hidden">Все проекты</span></button>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- Костыль конечно со "Всеми проектами", но тут уж такой дизайнерский ход. И либо делать общую обёртку между двумя несвязанными логическими блоками, либо вот так -->
+
+      <section class="wishes">
+        <h2 class="visually-hidden">Пожелания клиентов</h2>
+
+        <div class="wishes__button-block wishes__button-block--mobile-only">
+          <label for="all-projects">Все проекты</label>
+          <button class="button" id="all-projects"><span class="visually-hidden">Все проекты</span></button>
+        </div>
+        
+        <p class="wishes__offer">Расскажите о своем проекте:</p>
+
+        <form class="wishes__form" action="">
+           <!-- НЕ ЗАБУДЬ ВАЛИДАЦИЮ ПОЧТЫ И ТЕЛЕФОНА! -->
+          <p class="wishes__form-unit wishes__form-unit--name">
+            <label for="">Ваше имя</label>
+            <input type="text">
+          </p>
+
+          <p class="wishes__form-unit wishes__form-unit--phone">
+            <label for="">Номер телефона</label>
+            <input type="text">
+          </p>
+
+          <p class="wishes__form-unit wishes__form-unit--email">
+            <label for="">Email</label>
+            <input type="text">
+          </p>
+
+          <p class="wishes__form-unit wishes__form-unit--tell-about-project">
+            <label for="">Расскажите о проекте</label>
+            <input type="text">
+          </p>
+
+          <label class="wishes__form-checkbox-unit">
+            <input class="feedback__checkbox visually-hidden" type="checkbox" required>
+            <span class="feedback__custom-checkbox"></span>
+            <span class="feedback__agreement">Согласие на <a href="#">обработку персональных данных</a></span>
+          </label>
+
+          <div class="wishes__button-block">
+            <label for="submit">Отправить</label>
+            <button class="button" id="submit" type="submit"><span class="visually-hidden">Отправить</span></button>
+          </div>
+
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <img class="main-footer__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
+
+      <ul class="main-footer__navigation-list not-mobile">
+        <li class="main-footer__navigation-item">
+          <a class="main-footer__navigation-link" href="#about">Главная</a>
+        </li>
+        <li class="main-footer__navigation-item">
+          <a class="main-footer__navigation-link" href="#production">Проекты</a>
+        </li>
+        <li class="main-footer__navigation-item">
+          <a class="main-footer__navigation-link" href="#solutions">Отзывы</a>
+        </li>
+        <li class="main-footer__navigation-item">
+          <a class="main-footer__navigation-link" href="#mission">Команда</a>
+        </li>
+        <li class="main-footer__navigation-item">
+          <a class="main-footer__navigation-link" href="#team">Контакты</a>
+        </li>
+      </ul>
+
+      <!-- Уточни семантику адреса, вроде так -->
+      <address class="main-footer__contacts"> 
+        <p><a class="main-footer__phone" href="tel:+7-343-383-51-70">+7 (343) 383 51 70</a></p>
+        <p><a class="main-footer__email" href="mailto:info@make-it.com">info@make-it.com</a></p>
+        <p class="main-footer__address">Екатеринбург, ул. Луначарского 80, оф. 312</p>
+      </address>
+
+      <!-- ПОКА ПРОСТО ЗАГЛУШКИ НА САМИ САЙТЫ -->
+      <!-- А что должно происходить с иконками на разных состояниях - ховер, эктив? -->
+      <ul class="main-footer__social-list">
+        <li>
+          <a class="main-footer__social-item main-footer__social-item--whatsapp" href="https://www.whatsapp.com/?lang=ru" title="Whatsapp" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Whatsapp</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-footer__social-item main-footer__social-item--telegram" href="https://web.telegram.org/" title="Telegram" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-footer__social-item main-footer__social-item--facebook" href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-footer__social-item main-footer__social-item--instagram" href="https://www.instagram.com/?hl=ru" title="Instagram" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="main-footer__policy">
+        <p><a class="main-footer__confidentiality" href="">Политика конфиденциальности</a></p>
+        <p><a class="main-footer__cookie" href="">Обработка Cookie</a></p>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <!-- <script src="js/script.js" defer></script> -->
+</body>
+</html>

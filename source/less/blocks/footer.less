@@ -1,0 +1,134 @@
+.main-footer {
+  background-color: #202020;
+  color: #fff;
+  padding: 100px 20px 50px;
+}
+
+.main-footer__logo {
+  margin-bottom: 33px;
+}
+
+.main-footer__navigation-list {
+  display: none;
+}
+
+.main-footer__phone,
+.main-footer__email,
+.main-footer__address {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.main-footer__contacts p:first-child {
+  margin-bottom: 20px;
+}
+
+.main-footer__contacts p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.main-footer__address {
+  font-size: 14px;
+  line-height: 14px; 
+}
+
+
+.main-footer__social-list {
+  .unordered-list;
+  .flex-container;
+  margin: 50px 0 112px;
+}
+
+.main-footer__social-item {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.main-footer__social-item:hover {
+
+}
+
+.main-footer__social-item--whatsapp {
+  background-image: url(../../img/icons/whatsapp.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.main-footer__social-item--telegram {
+  background-image: url(../../img/icons/telegram.svg);
+  width: 24px;
+  height: 20px;
+}
+
+.main-footer__social-item--facebook {
+  background-image: url(../../img/icons/facebook.svg);
+  width: 12px;
+  height: 24px;
+}
+
+.main-footer__social-item--instagram {
+  background-image: url(../../img/icons/instagram.svg);
+  width: 24px;
+  height: 24px;
+}
+
+
+.main-footer__confidentiality,
+.main-footer__cookie {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+@media (min-width: 1200px) {
+  .main-footer {
+    padding: 100px 200px 115px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+
+  .main-footer__navigation-list {
+    .unordered-list;
+    .flex-container;
+    margin-left: 101px;
+  }
+
+  .main-footer__navigation-item {
+    .main-typographic-theme;
+    font-size: 18px;
+    line-height: 18px;
+    padding-right: 50px;
+  }
+
+  .main-footer__navigation-link {
+    color: #fff;
+  }
+
+
+  .main-footer__social-list {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .main-footer__contacts {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    .flex-container;
+    justify-content: space-between;
+  }
+
+
+
+}

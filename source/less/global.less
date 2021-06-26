@@ -1,0 +1,104 @@
+// @mobile-width: 375px;
+// @desktop-width: 1920px;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  .main-typographic-theme;
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: @desktop-width;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+// .container {
+//   width: @desktop-width;
+//   margin: 0 auto;
+//   background-color: #fff;
+// }
+
+
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+
+  border-radius: 50%;
+  border: none;
+  
+  min-width: 100px;
+  min-height: 100px;
+  
+  cursor: pointer;
+
+  background-image: url("../img/icons/arrow-right-black.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+
+  &:hover {
+
+  }
+
+  &:active {
+
+  }
+
+  &:disabled {
+
+  }
+}
+
+// .overlay::before {
+//   content: "";
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 50;
+//   display: block;
+//   height: 100%;
+//   width: 100%;
+//   background: rgba(0, 0, 0, 0.8);
+// }
+
+// a:focus,
+// button:focus,
+// input:focus,
+// select:focus {
+//   outline: none;
+//   box-shadow: 0 0 5px 3px red;
+// }
