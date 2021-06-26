@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<title>ТАЙТЛ</title>
+	<title>Make It!</title>
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -16,93 +16,22 @@
   <meta name="description" content="ДЕСКРИПШН">
   
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Шрифты пока оставляю закомментированными, на случай, если они всё-таки понадобятся. В продакшен-версии удалю всё лишнее -->
-  
-  <!-- 100 -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-thin.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-thinitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 200 -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-ultralight.ttf as="font" type="font/ttf" crossorigin="anonymous"> -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-ultralightitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 300 -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-lightitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 400 -->
   <link rel="preload" href="fonts/Gilroy/gilroy-regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-regularitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 500 -->
   <link rel="preload" href="fonts/Gilroy/gilroy-medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-mediumitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 600 -->
   <link rel="preload" href="fonts/Gilroy/gilroy-semibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-semibolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 700 -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-bold.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-bolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 800 -->
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-extrabolditalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-
-  <!-- 900 -->
   <link rel="preload" href="fonts/Gilroy/gilroy-black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/Gilroy/gilroy-blackitalic.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
 
   <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> -->
 
   <script src="js/picturefill.min.js" async></script>
 </head>
 
-<!--
-  Issues:
-    - Затык с гридами в секции вишез и футере на десктопе
-    - Горизонтальный скролл на ноутбучных ширинах
-    - Линк-прелоад на ттф, а вофф-2 (сверься по инструкции)
-
-    - Пока не соображу, как избавиться от горизонтального скролла из-за призрачного текста. Но это не сложно, вроде, просто надо подумать. Эффект выезжающих из-за края экрана элементов. Чтобы текст откусывался и не выползал за контейнер. Совсем откусывался, а не только визуально. (375)Сделай пока картинкой, а поиски решения добавь себе в задачи
-    - Убери вектору размеры на уровне разметки, перенеси это дело в стили. Кстати, может то, что ты принял за растр, можно тоже в векторе экспортнуть?
-    - Вспомни как красиво делать ширину центровщику на десктопе
-    
-    - Бургерное меню. Пока без открывания (Реализация - Седона, оживление - Абожур)
-    - Якорь приделай. Пока без скриптов и отдельным блоком
-    - Заголовки не забудь везде нормальные прописать
-    - Нормально поля формы и телефоны-адреса (валидация!)
-    - Почисти код, параллельно фикся недопилки по своим комментариям
-    - Исправить имена класса в кастомных чекбоксах
-    - Валидация почты и телефона
-    - СВГ-шки соцсетей заинлайнить в стилях
-
-    - Избавиться от горизонтального скроллбара на ширине ноутбука
-
-    - Вообще в карточке Метатрона, наверное, лучше их собрать в одну картинку... посмотрю, когда все версии будут готовы и одобрены
-    - РЕТИНА!
-
-    - Когда на планшет+ перейдешь - ширину контейнера выстави на ширину макета, а в медиавыражениях где-то 1200 и начиная с этой ширины - десктоп. А мобилка пусть примерно до 450 тянется... потом уточни получше эти значения. Итого на планшеты и ноутбуки выпадает диапазон 450-1200
-    - Не забудь всем картинкам через пикчур ретину прикрутить. Декоративным тоже
-    - Мутный Сталкер
-    - Проверка БЭМа и структуры заголовков
-    - Валидатором пройдись
-    - Дескрипшн и кейвордз
-    - Контейнер походу вообще не понадобится
-    - Обязательно, по итогу, не забудь грохнуть все неиспользуемые шрифты! В том числе и фоллбэчные ттф-ы. Всё равно вряд ли остались браузеры, которые не поддерживают хотя бы вофф-1
-    - Нот мобайл (проекты и хедер, эталон в Седоне) - десктопный хэдер, исправить
-    - С тэгами пока засада, подумай об этом чуть позже. Тут или псевдокласс, или гриды. Или флоат?.. Пока сбрасываю правильный маргин.
-    - Кроссбраузерность
-    - Проставь пока заглушки шрефакм ссылок
-    
--->
-
 <body>
   <div class="container">
 
     <header class="main-header">
 
-      <h1 class="visually-hidden">САМЫЙ ГЛАВНЫЙ ЗАГОЛОВОК</h1>
+      <h1 class="visually-hidden">Make It!</h1>
 
       <nav class="main-header__navigation">
         <img class="main-header__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
@@ -128,7 +57,6 @@
 
       <section class="main-header__solutions">
         <h2 class="main-header__solutions-heading">Реализуем комплексные <br> it-решения для бизнеса</h2>
-        <!-- Кстати, чото вот сейчас думаю - это тоже на заголовок не сильно тянет. Для заголовка бы пожалуй подошло что-то типа "Наши решения". А визуально отобразить это... хотя тут 50 на 50, так что надо обсуждать. Вообще это не критичный момент -->
         <div class="main-header__solutions-wrapper">
           <ul class="main-header__solutions-list">
             <li>
@@ -168,6 +96,7 @@
         <h2 class="visually-hidden">Наши проекты</h2>
 
         <ul class="projects__project-list">
+
           <li class="projects__project-item projects__project-item--metatron">
             <div class="projects__metatron-container">
               <div class="projects__metatron-content">
@@ -178,8 +107,8 @@
                 </ul>
                 <img class="projects__project-logo" src="img/metatron-1.png" alt="Логотип Metatron" width="98" height="127">
                 <div class="projects__metatron-description">
-                  <h3>Метатрон</h3>
-                  <p>Разработка сайта</p>
+                  <h3 class="projects__project-name">Метатрон</h3>
+                  <p class="projects__project-description">Разработка сайта</p>
                 </div>
               </div>
               <div class="projects__metatron-brand">
