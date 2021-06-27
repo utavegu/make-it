@@ -1059,13 +1059,13 @@ img {
   flex-wrap: wrap;
   flex-shrink: 0;
   margin: 50px 0 112px;
+  align-items: center;
+  column-gap: 43px;
 }
 .main-footer__social-item {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
-  margin-right: 40px;
 }
 .main-footer__social-item--whatsapp {
   background-image: url(../../img/icons/whatsapp.svg);
@@ -1136,6 +1136,23 @@ img {
     flex-shrink: 0;
     justify-content: space-between;
   }
+}
+.anchor {
+  position: fixed;
+  bottom: 68px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  display: block;
+  transform: rotate(-90deg);
+  opacity: 20%;
+}
+.anchor:hover {
+  opacity: 100%;
+}
+.anchor-show {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
