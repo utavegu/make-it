@@ -21,6 +21,7 @@
   <link rel="preload" href="fonts/Gilroy/gilroy-semibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="fonts/Gilroy/gilroy-black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
+  <!-- Логотип мэйк-айти -->
   <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> -->
 
   <script src="js/picturefill.min.js" async></script>
@@ -34,7 +35,9 @@
       <h1 class="visually-hidden">Make It!</h1>
 
       <nav class="main-header__navigation">
-        <img class="main-header__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
+        <a href="#">
+          <img class="main-header__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
+        </a>
         <ul class="main-header__navigation-list not-mobile">
           <li class="main-header__navigation-item">
             <a class="main-header__navigation-link" href="#about">Главная</a>
@@ -52,32 +55,34 @@
             <a class="main-header__navigation-link" href="#team">Контакты</a>
           </li>
         </ul>
-        <button class="main-header__open-menu-button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-header__open-menu-button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
 
       <section class="main-header__solutions">
         <h2 class="main-header__solutions-heading">Реализуем комплексные <br> it-решения для бизнеса</h2>
         <div class="main-header__solutions-wrapper">
           <ul class="main-header__solutions-list">
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--sites">
               <a href="#" class="main-header__solution">Sites</a>
             </li>
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--marketing">
               <a href="#" class="main-header__solution">Marketing</a>
             </li>
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--crm">
               <a href="#" class="main-header__solution">Crm</a>
             </li>
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--instagram">
               <a href="#" class="main-header__solution">Instagram</a>
             </li>
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--facebook">
               <a href="#" class="main-header__solution">Facebook</a>
             </li>
-            <li>
+            <li class="main-header__solution-item main-header__solution-item--bitrix">
               <a href="#" class="main-header__solution">Bitrix</a>
             </li>
-            <li>
+            <li class="main-header__solution-item">
               <a href="#" class="main-header__solution">Landing</a>
             </li>
           </ul>
@@ -266,7 +271,8 @@
 
   </div>
 
-  <a class="anchor button"></a>
+  <!-- <a class="anchor button"></a> -->
+  <!-- 3 разных скрипта через IIFE -->
   <!-- <script src="js/script.js" defer></script> -->
 </body>
 </html>
