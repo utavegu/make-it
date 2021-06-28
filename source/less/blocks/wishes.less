@@ -1,7 +1,7 @@
 .wishes {
   background: 
-  linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0) 100%),
-  linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
+    linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0) 100%),
+    linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
   padding: 50px 20px;
   color: #fff;
 }
@@ -94,6 +94,7 @@
 @media (min-width: 1200px) {
   .wishes {
     padding: 200px;
+    padding-bottom: 151px;
   }
 
   .wishes__button-block--mobile-only {
@@ -103,13 +104,9 @@
   .wishes__offer {
     .headers-typographic-theme;
     width: auto;
-    margin: 0 0 148px;
+    margin: 0 0 128px;
     font-size: 48px;
     line-height: 48px;
-  }
-
-  .wishes__form .wishes__form-unit:last-of-type label {
-    margin-bottom: -4px;
   }
 
   .wishes__form {
@@ -118,24 +115,42 @@
       "name phone button" 
       "tell email button" 
       "checkbox . .";
-    // column-gap: ;
-    // row-gap: ;
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .wishes__form-unit {
+    font-size: 18px;
+    line-height: 18px;
+    width: 480px;
+  }
+
+  .wishes__form-unit label {
+    margin-bottom: -5px;
+  }
+
+  .wishes__form .wishes__form-unit:last-of-type label {
+    margin-bottom: -4px;
   }
 
   .wishes__form-unit--name {
     grid-area: name;
+    width: 480px;
   }
 
   .wishes__form-unit--phone {
     grid-area: phone;
+    width: 480px;
   }
 
   .wishes__form-unit--email {
     grid-area: email;
+    width: 480px;
   }
 
   .wishes__form-unit--tell-about-project {
     grid-area: tell;
+    width: 480px;
   }
 
   .wishes__form-checkbox-unit {
@@ -144,6 +159,17 @@
 
   .wishes__form  .wishes__button-block {
     grid-area: button;
+    width: 480px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -30px;
+  }
+
+  .wishes__form-checkbox-unit {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -30px;
+    align-items: flex-end;
   }
   
 }

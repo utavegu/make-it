@@ -27,6 +27,10 @@
   background-color: #F06E43
 }
 
+.projects__project-item--indihome .not-mobile {
+  display: none;
+}
+
 .projects__project-item--indihome {
   background-color: #fff;
   color: #202020;
@@ -64,16 +68,27 @@
 .projects__metatron-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  min-height: 275px;
 }
 
 .projects__metatron-content {
   padding: 20px;
   padding-right: 0;
-  min-height: 275px;
+  height: 100%;
   .flex-container;
   flex-direction: column;
   justify-content: space-between;
   background-color: #FF941A;
+  position: relative;
+}
+
+.projects__metatron-content::after {
+  .pseudo-element;
+  background: url(../../img/metatron-detail-group.png);
+  width: 98px;
+  height: 127px;
+  top: 74px;
+  right: -5px;
 }
 
 .projects__metatron-tags-list {
@@ -85,10 +100,6 @@
   font-size: 12px;
   line-height: 12px;
   margin-bottom: 5px;
-}
-
-.projects__metatron-content .projects__project-logo {
-  left: 106px;
 }
 
 .projects__metatron-description .projects__project-name,
@@ -105,6 +116,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 .projects__metatron-brand img {
@@ -133,10 +145,106 @@
     min-height: 580px;
   }
 
+  .projects__project-name {
+    margin: auto 0 0 50px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+  }
+  
+  .projects__project-description {
+    margin: 4px 0 50px 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .projects__project-item--all-projects {
     display: flex;
     background-color: #202020;
     align-items: center;
     justify-content: center;
   }
+
+  .projects__metatron-container {
+    grid-template-columns: 313px auto;
+    min-height: 580px;
+  }
+
+  .projects__metatron-content::after {
+    .pseudo-element;
+    background: center no-repeat url(../../img/metatron-detail-big.png);
+    width: 210px;
+    height: 202px;
+    top: 244px;
+    right: -59px;
+  }
+
+  .projects__metatron-content::before {
+    .pseudo-element;
+    background: center no-repeat url(../../img/metatron-detail-mini.png);
+    width: 173px;
+    height: 98px;
+    top: 145px;
+    right: 59px;
+  }
+
+  .projects__metatron-tags-list {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .projects__metatron-tag {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .projects__metatron-description {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .projects__metatron-brand img {
+    width: 465px;
+    height: 131px;
+    margin-left: 84px;
+  }
+
+  .projects__metatron-brand a {
+    background-image: url(../../img/icons/arrow-right-black.svg);
+    bottom: 50px;
+    right: 50px;
+    width: 28px;
+    height: 17px;
+  }
+
+  .projects__project-item--finance .projects__project-logo {
+    width: 292px;
+    height: 107px;
+  }
+
+  .projects__project-item--unihome .projects__project-logo {
+    width: 340px;
+    height: 340px;
+    margin-left: 170px;
+  }
+
+  .projects__project-item--indihome .projects__project-logo {
+    width: 203px;
+    height: 203px;
+  }
+
+  .projects__project-item--indihome .not-mobile {
+    display: inline;
+  }
+
+  .projects__project-item--all-projects label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+
 }
