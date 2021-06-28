@@ -2,6 +2,8 @@
   background-color: #202020;
   color: #fff;
   padding: 100px 20px 50px;
+
+  position: relative;
 }
 
 .main-footer__logo {
@@ -94,6 +96,16 @@
 .main-footer__confidentiality,
 .main-footer__cookie {
   color: rgba(255, 255, 255, 0.25);
+}
+
+.main-footer__anchor {
+  position: absolute;
+  bottom: 68px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  transform: rotate(-90deg);
 }
 
 
@@ -217,6 +229,10 @@
     line-height: 18px;
   }
 
-
+  .main-footer__anchor {
+    // bottom: 163px;
+    bottom: 123px;
+    right: 185px;
+  }
 
 }

@@ -1186,6 +1186,7 @@ img {
   background-color: #202020;
   color: #fff;
   padding: 100px 20px 50px;
+  position: relative;
 }
 .main-footer__logo {
   margin-bottom: 33px;
@@ -1264,6 +1265,15 @@ img {
 .main-footer__confidentiality,
 .main-footer__cookie {
   color: rgba(255, 255, 255, 0.25);
+}
+.main-footer__anchor {
+  position: absolute;
+  bottom: 68px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  transform: rotate(-90deg);
 }
 @media (min-width: 1200px) {
   .main-footer {
@@ -1368,23 +1378,10 @@ img {
     font-size: 18px;
     line-height: 18px;
   }
-}
-.anchor {
-  position: fixed;
-  bottom: 68px;
-  right: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 100;
-  display: block;
-  transform: rotate(-90deg);
-  opacity: 20%;
-}
-.anchor:hover {
-  opacity: 100%;
-}
-.anchor-show {
-  display: block;
+  .main-footer__anchor {
+    bottom: 123px;
+    right: 185px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
