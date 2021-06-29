@@ -38,25 +38,25 @@
         <a href="#">
           <img class="main-header__logo" src="img/icons/logo-white.svg" alt="Логотип MakeIT" width="45" height="26">
         </a>
-        <ul class="main-header__navigation-list not-mobile">
+        <ul class="main-header__navigation-list">
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#about">Главная</a>
+            <a class="main-header__navigation-link" href="#main">Главная</a>
           </li>
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#production">Проекты</a>
+            <a class="main-header__navigation-link" href="#projects">Проекты</a>
           </li>
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#solutions">Отзывы</a>
+            <a class="main-header__navigation-link" href="#reviews">Отзывы</a>
           </li>
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#mission">Команда</a>
+            <a class="main-header__navigation-link" href="#team">Команда</a>
           </li>
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#team">Контакты</a>
+            <a class="main-header__navigation-link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <button class="main-header__open-menu-button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть / закрыть меню</span>
         </button>
       </nav>
 
@@ -91,6 +91,38 @@
             <button class="button" type="button"><span class="visually-hidden">Отправить</span></button>
           </form>
         </div>
+      </section>
+
+      <section class="main-header__questionnaire">
+        <!-- Так... сначала заверстай все 4 экрана по пиксель-перфекту, а потом прикручивай скрипты. Начни со скрипта появления-закрытия. Чтобы и содержимое кнопки менялось. Ну тут суть та же, что и с бургером. 
+        Хотя давай сначала с одним экраном скрипты прикрути, сделай чтобы всё работало как надо, а потом другие 3 заверстаешь
+        Шаблоны бы, кстати, в идеале в каком-то отдельном файле хранить
+        -->
+        
+        <div class="main-header__questionnaire questionnaire main-header__questionnaire--first-screen">
+
+          <div class="questionnaire__inner">
+
+            <div class="questionnaire__suggestion">
+              <p class="questionnaire__suggestion-heading">Вам требуется..</p>
+              <p class="questionnaire__suggestion-content">
+                <input type="checkbox"></input>
+                <label for="">
+                  <p>Заголовок пункта</p>
+                  <p>Описание пункта</p>
+                </label>
+              </p>
+            </div>
+
+            <div class="questionnaire__button-block">
+              <button>КНОПКА</button>
+            </div>
+          
+          </div>
+
+        </div>
+
+
       </section>
 
     </header>
@@ -131,7 +163,6 @@
             <p class="projects__project-description">Разработка сайта и рекламной компании</p>
           </li>
 
-          <!-- Так, что-то тут какая-то шляпа с чёткостью картинки. Экспортни ещё раз потом -->
           <li class="projects__project-item projects__project-item--stalker">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/stalker-desktop.png">

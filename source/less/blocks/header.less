@@ -29,25 +29,65 @@
 }
 
 .main-header__navigation-list {
+  .unordered-list;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #202020;
+  top: 50px;
+  left: 0;
+}
+
+.main-header__navigation-list.hidden {
   display: none;
+}
+
+.main-header__navigation-item {
+  .main-typographic-theme;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.main-header__navigation-link {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-align: center;
+
+  &:hover {
+    color: #202020;
+  }
 }
 
 .main-header__open-menu-button {
   background-color: transparent;
   width: 46px;
-  height: 8px;
+  height: 46px;
   border: none;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
   cursor: pointer;
+  z-index: 1;
+
+  background-image: url(../../img/icons/menu_white_48dp.svg);
+  transition: 0.3s all linear;
+
+  margin-top: -11px;
+}
+
+.main-header__open-menu-button.is-opened {
+  background-image: url(../../img/icons/close_white_48dp.svg);
 }
 
 
 .main-header__solutions {
-  margin-top: 102px;
+  // margin-top: 102px;
+  // ПОКА КНОПКУ-БУРГЕР НЕ ДОПИЛИШЬ, МАНИПУЛИРУЙ ЭТИМ ЗНАЧЕНИЕМ
+  margin-top: 95px;
 }
 
 .main-header__solutions-heading {
@@ -105,6 +145,7 @@
 
 .main-header__solutions form button {
   margin-top: 10px;
+  z-index: 1;
 
   &:hover {
     background-image:
@@ -112,6 +153,13 @@
       linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
   }
 }
+
+
+.main-header__questionnaire {
+  display: none;
+}
+
+
 
 @media (min-width: 1200px) {
   .main-header {
@@ -142,9 +190,12 @@
   }
 
   .main-header__navigation-list {
-    .unordered-list;
     .flex-container;
+    position: static;
+    margin: 0;
     margin-left: 101px;
+    width: auto;
+    background-color: transparent;
   }
 
   .main-header__navigation-item {
@@ -152,10 +203,20 @@
     font-size: 18px;
     line-height: 18px;
     padding-right: 50px;
+    border: none;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   .main-header__navigation-link {
     color: #fff;
+    padding: 0;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   .main-header__open-menu-button {
@@ -163,6 +224,7 @@
     margin-right: -15px;
     margin-top: -5px;
     height: 10px;
+    visibility: hidden; // ПОКА ТАК
   }
 
 
@@ -212,5 +274,61 @@
     margin-top: -29px;
     margin-left: 70px;
   }
+
+
+
+  .main-header__questionnaire {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    // width: 40%;
+    width: 783px;
+    height: 100%;
+    padding: 150px 200px 50px 100px;
+    color: #202020;
+    background-color: #fff;
+  }
+
+
+  .questionnaire__inner {
+    height: 100%;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  .questionnaire__suggestion {
+    border: 3px solid blue;
+  }
+
+  .questionnaire__suggestion-heading {
+    .headers-typographic-theme;
+    line-height: 43px;
+  }
+
+  .questionnaire__suggestion-content {
+    
+  }
+
+  .questionnaire--first-screen .questionnaire__suggestion-content {
+    margin-top: 50px;
+  }
+
+
+  .questionnaire__button-block {
+    border: 3px solid green;
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .questionnaire__button-block button {
+    margin-top: auto;
+    margin-bottom: ;
+  }
+
+
 
 }
