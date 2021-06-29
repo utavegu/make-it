@@ -88,19 +88,25 @@
           </ul>
           <form class="main-header__solutions-form" action="">
             <input type="text">
-            <button class="button" type="button"><span class="visually-hidden">Отправить</span></button>
+            <button class="main-header__open-questionnaire-button button" type="button"><span class="visually-hidden">Отправить</span></button>
           </form>
         </div>
       </section>
 
-      <section class="main-header__questionnaire">
-        <!-- Так... сначала заверстай все 4 экрана по пиксель-перфекту, а потом прикручивай скрипты. Начни со скрипта появления-закрытия. Чтобы и содержимое кнопки менялось. Ну тут суть та же, что и с бургером. 
+      <!-- Так... сначала заверстай все 4 экрана по пиксель-перфекту, а потом прикручивай скрипты. Начни со скрипта появления-закрытия. Чтобы и содержимое кнопки менялось. Ну тут суть та же, что и с бургером. 
         Хотя давай сначала с одним экраном скрипты прикрути, сделай чтобы всё работало как надо, а потом другие 3 заверстаешь
         Шаблоны бы, кстати, в идеале в каком-то отдельном файле хранить
         -->
-        
-        <div class="main-header__questionnaire questionnaire main-header__questionnaire--first-screen">
+      <section class="main-header__questionnaire hidden">
 
+        <div class="questionTree">
+          <div class="question"></div>
+          <div class="buttons"></div>
+        </div>
+        
+        <!-- <div class="main-header__questionnaire questionnaire questionnaire--first-screen"> -->
+
+          <!--
           <div class="questionnaire__inner">
 
             <div class="questionnaire__suggestion">
@@ -119,8 +125,9 @@
             </div>
           
           </div>
+        -->
 
-        </div>
+        <!-- </div> -->
 
 
       </section>

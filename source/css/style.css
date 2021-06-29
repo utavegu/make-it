@@ -752,12 +752,15 @@ img {
   outline: none;
   margin-top: -6px;
 }
-.main-header__solutions form button {
+.main-header__open-questionnaire-button {
   margin-top: 10px;
   z-index: 1;
 }
-.main-header__solutions form button:hover {
+.main-header__open-questionnaire-button:hover {
   background-image: url(../../img/icons/arrow-right-black.svg), linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
+}
+.main-header__open-questionnaire-button.is-opened {
+  background-image: url(../../img/icons/close_default.svg);
 }
 .main-header__questionnaire {
   display: none;
@@ -870,15 +873,14 @@ img {
     color: #202020;
     background-color: #fff;
   }
+  .main-header__questionnaire.hidden {
+    display: none;
+  }
   .questionnaire__inner {
     height: 100%;
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .questionnaire__suggestion {
-    border: 3px solid blue;
   }
   .questionnaire__suggestion-heading {
     font-family: "gilroy-semibold", "Arial", "Helvetica", sans-serif;
@@ -887,17 +889,30 @@ img {
     line-height: 36px;
     line-height: 43px;
   }
-  .questionnaire--first-screen .questionnaire__suggestion-content {
+  .questionnaire__suggestion-content .small-typographic-theme {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .questionnaire__suggestion-content {
     margin-top: 50px;
   }
   .questionnaire__button-block {
-    border: 3px solid green;
     flex-grow: 1;
     display: flex;
   }
-  .questionnaire__button-block button {
+  .questionnaire__button-block .button-next {
     margin-top: auto;
-    margin-bottom: ;
+    background-color: green;
+  }
+  .questionnaire__button-block .button-close {
+    margin-top: auto;
+    background-color: red;
+  }
+  .main-header__questionnaire .buttons .button-next {
+    background-color: green;
+  }
+  .main-header__questionnaire .buttons .button-close {
+    background-color: red;
   }
 }
 .projects__project-list {
