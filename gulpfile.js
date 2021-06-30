@@ -8,13 +8,13 @@ var gulp = require("gulp");  // сам Галп
 var less = require("gulp-less");  // декодер less-css
 var sourcemap = require("gulp-sourcemaps");  // карта исходников
 var server = require("browser-sync").create();  // локальный веб-сервер
-var plumber = require("gulp-plumber");  // гаситель критичности ошибок
+var plumber = require("gulp-plumber");  // гаситель критичности ошибок (ЛИШНЕЕ, ИМХО)
 
 // Работа с графикой
 var imagemin = require("gulp-imagemin");  // 4 плагина по оптимизации изображений
 var webp = require("gulp-webp");  // преобразователь растра в webp
-var svgstore = require("gulp-svgstore");  // сборщик svg-спрайта
 /*
+var svgstore = require("gulp-svgstore");  // сборщик svg-спрайта
 var posthtml = require("gulp-posthtml");  // post-html
 var include = require("posthtml-include");  // и плагин инклюд для него
 */
@@ -23,7 +23,7 @@ var include = require("posthtml-include");  // и плагин инклюд дл
 var del = require("del");  // галп-удалятель
 var rename = require("gulp-rename");  // галп-переименователь
 
-var autoprefixer = require("gulp-autoprefixer");  // автопрефиксер
+var autoprefixer = require("gulp-autoprefixer");  // автопрефиксер (ТЫ НАВЕРНОЕ БЕЗ ПОСТ-ЦСС НЕ ФУРЫЧИШЬ)... Хотя там другой был... старый... вот лучше попробуй с ним разобраться. Или пересмотреть новую лекцию по автоматизации
 
 /*
 var minhtml = require("gulp-minimize");  // минификатор html

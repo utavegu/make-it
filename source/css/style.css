@@ -574,7 +574,7 @@ body {
   letter-spacing: 0em;
   background-color: #202020;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -1003,6 +1003,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../img/metatron-detail-group.png);
+  /*
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../../img/metatron-detail-group@2x.png);
+  }
+  */
   width: 98px;
   height: 127px;
   top: 74px;
