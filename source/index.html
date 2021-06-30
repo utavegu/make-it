@@ -93,10 +93,6 @@
         </div>
       </section>
 
-      <!-- Так... сначала заверстай все 4 экрана по пиксель-перфекту, а потом прикручивай скрипты. Начни со скрипта появления-закрытия. Чтобы и содержимое кнопки менялось. Ну тут суть та же, что и с бургером. 
-        Хотя давай сначала с одним экраном скрипты прикрути, сделай чтобы всё работало как надо, а потом другие 3 заверстаешь
-        Шаблоны бы, кстати, в идеале в каком-то отдельном файле хранить
-        -->
       <section class="main-header__questionnaire hidden">
         <div class="questionnaire__inner">
           <div class="questionnaire__suggestion"></div>
@@ -113,54 +109,77 @@
 
         <ul class="projects__project-list">
 
+          <!-- ПРОВЕРЬ ЧТО ПРАВИЛЬНО ВЫГРУЖЕНЫ ЛОГОТИПЫ! РАСТР В РЕТИНУ! -->
+
           <li class="projects__project-item projects__project-item--metatron">
-            <div class="projects__metatron-container">
-              <div class="projects__metatron-content">
-                <ul class="projects__metatron-tags-list">
-                  <li class="projects__metatron-tag">#разработка</li>
-                  <li class="projects__metatron-tag">#маркетинг</li>
-                  <li class="projects__metatron-tag">#дизайн</li>
-                </ul>
-                <div class="projects__metatron-description">
-                  <h3 class="projects__project-name">Метатрон</h3>
-                  <p class="projects__project-description">Разработка сайта</p>
-                </div>
-              </div>
-              <div class="projects__metatron-brand">
-                <img src="img/metatron-logo.svg" alt="Логотип Metatron">
-                <a href=""><span class="visually-hidden">Перейти</span></a>
-              </div>
+            <ul class="projects__project-tags">
+              <li class="projects__project-tag">#разработка</li>
+              <li class="projects__project-tag">#маркетинг</li>
+              <li class="projects__project-tag">#дизайн</li>
+            </ul>
+            <div class="projects__project-description">
+              <h3 class="projects__project-name">Метатрон</h3>
+              <p class="projects__project-occupation">Разработка сайта</p>
             </div>
+            <img class="projects__project-logo" src="img/metatron-logo.svg" alt="Логотип Metatron">
+            <a class="projects__project-link" href=""><span class="visually-hidden">Перейти</span></a>
           </li>
 
           <li class="projects__project-item projects__project-item--finance">
-            <picture>
-              <!-- <source media="(min-width: 1200px)" srcset="img/stalker-desktop.png"> -->
-              <img class="projects__project-logo" src="img/finance.svg" alt="Логотип Finance">
-            </picture>
-            <h3 class="projects__project-name">Кредитный брокер</h3>
-            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+            <ul class="projects__project-tags projects__project-tags--not-display">
+              <li class="projects__project-tag">#разработка</li>
+              <li class="projects__project-tag">#маркетинг</li>
+              <li class="projects__project-tag">#дизайн</li>
+            </ul>
+            <div class="projects__project-description">
+              <h3 class="projects__project-name">Кредитный брокер</h3>
+              <p class="projects__project-occupation">Разработка сайта и рекламной компании</p>
+            </div>
+            <img class="projects__project-logo" src="img/finance.svg" alt="Логотип Finance">
+            <a class="projects__project-link projects__project-link--not-display" href=""><span class="visually-hidden">Перейти</span></a>
           </li>
 
           <li class="projects__project-item projects__project-item--stalker">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/stalker-desktop.png">
-              <img class="projects__project-logo" src="img/stalker.png" alt="Логотип Stalker">
-            </picture>
-            <h3 class="projects__project-name">Лендинг каталог для продажи товара</h3>
-            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+            <ul class="projects__project-tags projects__project-tags--not-display">
+              <li class="projects__project-tag">#разработка</li>
+              <li class="projects__project-tag">#маркетинг</li>
+              <li class="projects__project-tag">#дизайн</li>
+            </ul>
+            <div class="projects__project-description">
+              <h3 class="projects__project-name">Лендинг каталог для продажи товара</h3>
+              <p class="projects__project-occupation">Разработка сайта и рекламной компании</p>
+            </div>
+            <!-- РЕТИНУ ЛОГОТИПУ! -->
+            <img class="projects__project-logo" src="img/stalker.png" alt="Логотип Stalker">
+            <a class="projects__project-link projects__project-link--not-display" href=""><span class="visually-hidden">Перейти</span></a>
           </li>
 
           <li class="projects__project-item projects__project-item--unihome">
+            <ul class="projects__project-tags projects__project-tags--not-display">
+              <li class="projects__project-tag">#разработка</li>
+              <li class="projects__project-tag">#маркетинг</li>
+              <li class="projects__project-tag">#дизайн</li>
+            </ul>
+            <div class="projects__project-description">
+              <h3 class="projects__project-name">Юнихоум новостройки в Екатеринбурге</h3>
+              <p class="projects__project-occupation">Разработка сайта и рекламной компании</p>
+            </div>
             <img class="projects__project-logo" src="img/unihome.svg" alt="Логотип Юнихоум">
-            <h3 class="projects__project-name">Юнихоум новостройки в Екатеринбурге</h3>
-            <p class="projects__project-description">Разработка сайта и рекламной компании</p>
+            <a class="projects__project-link projects__project-link--not-display" href=""><span class="visually-hidden">Перейти</span></a>
           </li>
 
           <li class="projects__project-item projects__project-item--indihome">
+            <ul class="projects__project-tags projects__project-tags--not-display">
+              <li class="projects__project-tag">#разработка</li>
+              <li class="projects__project-tag">#маркетинг</li>
+              <li class="projects__project-tag">#дизайн</li>
+            </ul>
+            <div class="projects__project-description">
+              <h3 class="projects__project-name">Аренда спецтехники</h3>
+              <p class="projects__project-occupation">Посадочная <span class="not-mobile">для проекта</span> страница аренды спецтехники</p>
+            </div>
             <img class="projects__project-logo" src="img/indihome.svg" alt="Логотип Indi home">
-            <h3 class="projects__project-name">Аренда спецтехники</h3>
-            <p class="projects__project-description">Посадочная <span class="not-mobile">для проекта</span> страница аренды спецтехники</p>
+            <a class="projects__project-link projects__project-link--not-display" href=""><span class="visually-hidden">Перейти</span></a>
           </li>
 
           <li class="projects__project-item projects__project-item--all-projects">
