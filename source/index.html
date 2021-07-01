@@ -204,6 +204,7 @@
         <p class="wishes__offer">Расскажите о своем проекте:</p>
 
         <form class="wishes__form" action="">
+
           <p class="wishes__form-unit wishes__form-unit--name">
             <label for="">Ваше имя</label>
             <input type="text">
@@ -224,7 +225,7 @@
             <input type="text">
           </p>
 
-          <label class="wishes__form-checkbox-unit">
+          <label class="wishes__form-unit wishes__form-unit--agreement">
             <input class="feedback__checkbox visually-hidden" type="checkbox" required>
             <span class="feedback__custom-checkbox"></span>
             <span class="feedback__agreement">Согласие на <a href="#">обработку персональных данных</a></span>
@@ -232,7 +233,9 @@
 
           <div class="wishes__button-block">
             <label for="submit">Отправить</label>
-            <button class="button" id="submit" type="submit"><span class="visually-hidden">Отправить</span></button>
+            <button class="button" id="submit" type="submit">
+              <span class="visually-hidden">Отправить</span>
+            </button>
           </div>
 
         </form>

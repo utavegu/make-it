@@ -27,6 +27,7 @@
   margin: 150px 0 100px;
 }
 
+
 .wishes__form .wishes__form-unit:last-of-type label {
   margin: -1px;
 }
@@ -55,19 +56,22 @@
 }
 
 
-.wishes__form-checkbox-unit {
+.wishes__form-unit--agreement {
   margin-top: -10px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 28px auto;
   grid-gap: 20px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
-.wishes__form-checkbox-unit a {
+.wishes__form-unit--agreement a {
   // text-decoration: underline;
   color: #fff;
   border-bottom: 1px solid #fff;
 }
+
 
 .feedback__custom-checkbox {
   // position: absolute;
@@ -93,6 +97,14 @@
 
 
 
+@media (min-width: 768px) {
+  .wishes__offer {
+    width: auto;
+  }
+}
+
+
+
 @media (min-width: 1200px) {
   .wishes {
     padding: 200px;
@@ -104,28 +116,36 @@
   }
 
   .wishes__offer {
-    .headers-typographic-theme;
-    width: auto;
     margin: 0 0 128px;
     font-size: 48px;
     line-height: 48px;
   }
 
+
   .wishes__form {
     display: grid;
-    grid-template-areas:
-      "name phone button" 
-      "tell email button" 
-      "checkbox . .";
+
+    // grid-template-areas:
+    //   "name phone button" 
+    //   "tell email button" 
+    //   "checkbox . .";
+
+    grid-template-columns: repeat(3, 1fr);
+
     column-gap: 40px;
     row-gap: 30px;
   }
 
+  // .wishes__form > * {
+  //   border: 5px solid yellow;
+  // }
+
+  
   .wishes__form-unit {
     font-size: 18px;
     line-height: 18px;
-    width: 480px;
   }
+
 
   .wishes__form-unit label {
     margin-bottom: -5px;
@@ -135,43 +155,65 @@
     margin-bottom: -4px;
   }
 
+
+
+  
   .wishes__form-unit--name {
-    grid-area: name;
-    width: 480px;
+    // grid-area: name;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .wishes__form-unit--phone {
-    grid-area: phone;
-    width: 480px;
+    // grid-area: phone;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .wishes__form-unit--email {
-    grid-area: email;
-    width: 480px;
+    // grid-area: email;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .wishes__form-unit--tell-about-project {
-    grid-area: tell;
-    width: 480px;
+    // grid-area: tell;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
-  .wishes__form-checkbox-unit {
-    grid-area: checkbox;
-  }
+  .wishes__form-unit--agreement {
+    // grid-area: checkbox;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
-  .wishes__form  .wishes__button-block {
-    grid-area: button;
-    width: 480px;
-    font-size: 18px;
-    line-height: 18px;
-    margin-top: -30px;
-  }
-
-  .wishes__form-checkbox-unit {
     font-size: 18px;
     line-height: 18px;
     margin-top: -30px;
     align-items: flex-end;
   }
+
+  .wishes__form  .wishes__button-block {
+    // grid-area: button;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -30px;
+  }
+  
   
 }
