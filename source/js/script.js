@@ -45,83 +45,81 @@ openQuestionnaireButton.addEventListener("click", (evt) => {
 
 const templates = [
   `
-  <div>
+  <div class="questionnaire__slide questionnaire__slide--1">
     <p class="questionnaire__suggestion-heading">Вам требуется..</p>
-    <div class="questionnaire__suggestion-content">
-      <form>
-        <p>
-          <input name="sales" type="checkbox" checked></input>
-          <label for="">
-            <p>Повысить продажи</p>
-            <p>Создадим убедительный сайт и рекламную компанию с конверсией в заявку до 27%, реализуем комплексные стратегии для повышения продаж.</p>
-          </label>
-        </p>
-        <p>
-          <input name="design" type="checkbox"></input>
-          <label for="">
-            <p>Обновить дизайн</p>
-            <p>Помогаем улучшить имидж Вашего ресурса в интернете, путем создания аккуратного и стильного дизайна с упором на маркетинг и удобство использования.</p>
-          </label>
-        </p>
-        <p>
-          <input name="functional" type="checkbox"></input>
-          <label for="">
-            <p>Расширить функционал</p>
-            <p>Реализуем решения любой сложности, настраиваем интеграции с внешними сервисами, создаем модули и алгоритмы для автоматизации Вашего бизнеса онлайн.</p>
-          </label>
-        </p>
-      </form>
-    </div>
+    <form class="questionnaire__suggestion-content">
+      <div class="questionnaire__suggestion-form-item">
+        <label>
+          <input name="sales" class="questionnaire__checkbox visually-hidden" type="checkbox" checked>
+          <span class="questionnaire__custom-checkbox"></span>
+          <span class="questionnaire__custom-checkbox visually-hidden">Повысить продажи</span>
+        </label>
+        <div>
+          <p class="questionnaire__suggestion-unit-heading">Повысить продажи</p>
+          <p class="questionnaire__suggestion-description">Создадим убедительный сайт и рекламную компанию с конверсией в заявку до 27%, реализуем комплексные стратегии для повышения продаж.</p>
+        </div>
+      </div>
+
+      <div class="questionnaire__suggestion-form-item">
+        <label>
+          <input name="design" class="questionnaire__checkbox visually-hidden" type="checkbox">
+          <span class="questionnaire__custom-checkbox"></span>
+          <span class="questionnaire__custom-checkbox visually-hidden">Обновить дизайн</span>
+        </label>
+        <div>
+          <p class="questionnaire__suggestion-unit-heading">Обновить дизайн</p>
+          <p class="questionnaire__suggestion-description">Помогаем улучшить имидж Вашего ресурса в интернете, путем создания аккуратного и стильного дизайна с упором на маркетинг и удобство использования.</p>
+        </div>
+      </div>
+
+      <div class="questionnaire__suggestion-form-item">
+        <label>
+          <input name="functional" class="questionnaire__checkbox visually-hidden" type="checkbox">
+          <span class="questionnaire__custom-checkbox"></span>
+          <span class="questionnaire__custom-checkbox visually-hidden">Расширить функционал</span>
+        </label>
+        <div>
+          <p class="questionnaire__suggestion-unit-heading">Расширить функционал</p>
+          <p class="questionnaire__suggestion-description">Реализуем решения любой сложности, настраиваем интеграции с внешними сервисами, создаем модули и алгоритмы для автоматизации Вашего бизнеса онлайн.</p>
+        </div>
+      </div>
+    </form>
   </div>
   `,
   `
-  <div>
-    <p class="questionnaire__suggestion-heading">У вас уже есть сайт/профили в соц. сетях?</p>
-    <div class="questionnaire__suggestion-content">
-      <form>
-        <p>
-          <label for="">
-            Вставьте ссылку
-            <input name="link" type="text"></input>
-          </label>
-        </p>
-      </form>
-    </div>
+  <div class="questionnaire__slide questionnaire__slide--2">
+    <p class="questionnaire__suggestion-heading">У вас уже есть<br> сайт/профили в соц. сетях?</p>
+    <form class="questionnaire__suggestion-content">
+      <p class="questionnaire__suggestion-form-item">
+        <label for="">Вставьте ссылку</label>
+        <input name="link" type="text">
+      </p>
+    </form>
   </div>
 `,
 `
-<div>
+<div class="questionnaire__slide questionnaire__slide--3">
     <p class="questionnaire__suggestion-heading">Оставьте свои контактные данные</p>
-    <div class="questionnaire__suggestion-content">
-      <form id="server" onsubmit="return onSubmit();">
-        <p>
-          <label for="">
-            Ваше имя
-            <input name="name" type="text"></input>
-          </label>
-        </p>
-        <p>
-          <label for="">
-            Ваш номер телефона
-            <input name="phone" type="text"></input>
-          </label>
-        </p>
-        <p>
-          <label for="">
-            Email
-            <input name="email" type="text"></input>
-          </label>
-        </p>
-      </form>
-    </div>
+    <form class="questionnaire__suggestion-content" id="server" onsubmit="return onSubmit();">
+      <p class="questionnaire__suggestion-form-item">
+        <label for="">Ваше имя</label>
+        <input name="name" type="text">
+      </p>
+      <p class="questionnaire__suggestion-form-item">
+        <label for="">Ваш номер телефона</label>
+        <input type="tel" name="phone" type="text" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+      </p>
+      <p class="questionnaire__suggestion-form-item">
+        <label for="">Email</label>
+        <input type="email" name="email">
+      </p>
+    </form>
   </div>
 `,
 `
-<div>
+<div class="questionnaire__slide questionnaire__slide--4">
   <p class="questionnaire__suggestion-heading">Спасибо!</p>
-  <div class="questionnaire__suggestion-content">
-    <p>В ближайшее время мы проанализируем ваш проект и перезвоним с предложением!</p>
-  </div>
+  <p class="questionnaire__suggestion-content questionnaire__suggestion-description">В ближайшее время мы проанализируем ваш проект и перезвоним с предложением!</p>
 </div>
 `
 ];
@@ -129,8 +127,12 @@ const templates = [
 // Вас теперь лучше в стили через класс
 // Но пока не убираю, чтобы скрипт не сломать - рефакторить буду позже
 const buttonIcons = {
-  next: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>`,
-  close: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>`,
+  next: `<svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 9.5H28M28 9.5L19.5 1M28 9.5L19.5 18" stroke="white"/>
+  </svg>`,
+  close: `<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 21L11 11M21 1L11 11M11 11L21 21L1 1" stroke="white"/>
+  </svg>`,
 };
 
 const $ = (selector) => document.querySelector(selector);

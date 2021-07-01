@@ -14,3 +14,5 @@ npm-debug.*
 source/css/*.map
 Thumbs.db
 Issues.txt
+Bugs.txt
+Tasks.txt
