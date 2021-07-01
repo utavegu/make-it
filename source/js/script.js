@@ -20,7 +20,8 @@ anchor.addEventListener('click', go);
 const menuBurgerButton = document.querySelector(".main-header__open-menu-button");
 const headerNavigation = document.querySelector(".main-header__navigation-list");
 
-if (document.body.clientWidth <= 768) {
+if (document.body.clientWidth <= 752) {
+  // пляски с бубном - надо понять какой клиент видтх соответствует медиазапросу в 768
   headerNavigation.classList.add("hidden");
 }
 
