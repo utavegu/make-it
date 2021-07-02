@@ -37,6 +37,9 @@ menuBurgerButton.addEventListener("click", (evt) => {
 const openQuestionnaireButton = document.querySelector(".main-header__open-questionnaire-button");
 const questionnaireModule = document.querySelector(".main-header__questionnaire");
 
+// ВРЕМЕННО
+questionnaireModule.classList.remove("hidden");
+
 openQuestionnaireButton.addEventListener("click", (evt) => {
   evt.preventDefault();
   questionnaireModule.classList.toggle("hidden");
