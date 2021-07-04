@@ -15,24 +15,6 @@
   background-image: url(../../img/icons/close_default.svg);
 }
 
-
-
-
-
-
-
-
-
-// .main-header__questionnaire {
-//   display: none;
-// }
-
-
-
-
-
-
-
 .main-header__questionnaire {
   position: absolute;
   z-index: 10;
@@ -40,7 +22,6 @@
   top: 0;
   right: 0;
   width: 100%;
-  // height: 650px;
   padding: 30px 20px 20px 20px;
   color: #202020;
   background-color: #fff;    
@@ -88,7 +69,6 @@
   outline: none;
   width: 100%;
 }
-
 
 .questionnaire__slide--1 .questionnaire__suggestion-content {
   margin-top: 20px;
@@ -155,7 +135,6 @@
   align-items: flex-start;
 }
 
-
 .questionnaire__slide--3 .questionnaire__suggestion-content {
   margin-top: 100px;
 }
@@ -168,17 +147,6 @@
 .questionnaire__slide--4 .questionnaire__suggestion-content {
   margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .questionnaire__buttons-block {
   flex-grow: 1;
@@ -213,29 +181,9 @@
   .main-header__open-questionnaire-button {
     top: 70%;
   }
-
-  .main-header__questionnaire {
-    position: absolute;
-    z-index: 10;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 100%;
-    // height: 650px;
-    padding: 30px 20px 20px 20px;
-    color: #202020;
-    background-color: #fff;    
-  }
-  
-  .main-header__questionnaire.hidden {
-    display: none;
-  }
-  
+    
   .questionnaire__inner {
     height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .questionnaire__slide--3 .questionnaire__suggestion-form-item {
@@ -250,7 +198,6 @@
 
   .main-header__open-questionnaire-button {
     @media 
-    // (min-width: 1200px) and 
     (max-width: 1600px) {
       top: 80%;
     }
@@ -258,180 +205,45 @@
     right: 36%;
   }
 
-
-
   .main-header__questionnaire {
-    position: absolute;
-    z-index: 10;
-    display: block;
-    top: 0;
-    right: 0;
     width: 40%;
-    padding: 100px 100px 25px 50px;
-    color: #202020;
-    background-color: #fff;    
-  }
-
-  .main-header__questionnaire.hidden {
-    display: none;
+    padding: 100px 100px 25px 50px;  
   }
 
   .questionnaire__inner {
-    height: 98vh;
-    // height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 98vh; // ДАВАЙ ВСЁ В ПИКСЕЛЯХ! В РОТ Я ЕБАЛ ЭТИ ВХ-ВВ
   }
 
   .questionnaire__suggestion-heading {
-    .headers-typographic-theme;
     line-height: 43px;
-    margin: 0;
-    padding: 0;
   }
 
   .questionnaire__suggestion-content label {
-    .small-typographic-theme;
     font-size: 18px;
     line-height: 18px;
   }
 
   .questionnaire__suggestion-description {
-    .small-typographic-theme;
     font-size: 18px;
     line-height: 18px;
-    margin: 0;
-    padding: 0;
   }
-
-  .questionnaire__inner input[type="text"],
-  .questionnaire__inner input[type="tel"],
-  .questionnaire__inner input[type="email"] {
-    border: none;
-    border-bottom: 1px solid #202020;
-    background-color: transparent;
-    outline: none;
-    width: 100%;
-  }
-
 
   .questionnaire__slide--1 .questionnaire__suggestion-content {
     margin-top: 50px;
   }
 
   .questionnaire__slide--1 .questionnaire__suggestion-unit-heading {
-    .main-typographic-theme;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
-    padding: 0;
   }
 
   .questionnaire__slide--1 .questionnaire__suggestion-description {
     font-size: 16px;
     line-height: 21px;
-    margin: 0;
-    margin-top: 5px;
-    padding: 0;
-  }
-
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item label {
-    margin-right: 20px;
-  }
-
-  .questionnaire__custom-checkbox {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    border: 1px solid #000;
-    border-radius: 2px;
   }
   
-  .questionnaire__checkbox:checked + .questionnaire__custom-checkbox {
-    background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L6 8.5L13.5 1' stroke='black'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .questionnaire__checkbox:focus + .questionnaire__custom-checkbox {
-    outline: none;
-  }
-
-
-  .questionnaire__slide--2 .questionnaire__suggestion-content {
-    margin-top: 173px;
-  }
-
-  .questionnaire__slide--2 .questionnaire__suggestion-form-item,
-  .questionnaire__slide--3 .questionnaire__suggestion-form-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-
-  .questionnaire__slide--3 .questionnaire__suggestion-content {
-    margin-top: 100px;
-  }
-
   .questionnaire__slide--3 .questionnaire__suggestion-form-item {
     margin-bottom: 50px;
-  }
-
-  
-  .questionnaire__slide--4 .questionnaire__suggestion-content {
-    margin-top: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-  .questionnaire__buttons-block {
-    flex-grow: 1;
-    display: flex;
-  }
-
-  .questionnaire__buttons-block .button-next {
-    margin-top: auto;
-    background-color: #202020;
-    cursor: pointer;
-    // background-image: url("data:image/svg+xml,%3Csvg width='29' height='19' viewBox='0 0 29 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 9.5H28M28 9.5L19.5 1M28 9.5L19.5 18' stroke='white'/%3E%3C/svg%3E%0A");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 28px;
-    height: 17px;
-  }
-
-  .questionnaire__buttons-block .button-close {
-    margin-top: auto;
-    background-color: #202020;
-    cursor: pointer;
-    // Я разве тебя не закомментил уже?..
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 21L11 11M21 1L11 11M11 11L21 21L1 1' stroke='white'/%3E%3C/svg%3E%0A");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
   }
 
 }
@@ -439,12 +251,11 @@
 @media (min-width: 1650px) {
 
   .main-header__questionnaire {
-    width: 40%;
     padding: 130px 200px 40px 100px;
   }
 
   .questionnaire__inner {
-    height: 82vh;
+    height: 82vh; // В ПИКСЕЛЯХ!!!
   }
 
 }
