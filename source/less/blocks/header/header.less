@@ -1,0 +1,61 @@
+.main-header {
+  color: #ffffff;
+  background-color: #202020;
+  padding: 20px 20px 173px 20px;
+  position: relative;
+  // background-color: RED; // Для подгонки пиксель-перфекта
+}
+
+.main-header::before {
+  .pseudo-element;
+  background-image: url(../../img/make_mobile.svg);
+  width: 329px;
+  height: 109px;
+  right: 0;
+  top: 44px;
+}
+
+.main-header::after {
+  .pseudo-element;
+  .giant-typographic-theme;
+  content: "ke it";
+  margin-top: -21px;
+  margin-left: -49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .main-header {
+    padding: 50px 200px 180px;
+  }
+
+  .main-header::before {
+    background-image: url(../../img/make_desktop.svg);
+    width: 857px;
+    height: 216px;
+    top: 90px;
+  }
+
+  .main-header::after {
+    content: "ke it";
+    margin-top: -37px;
+    margin-left: -205px;
+    font-size: 288px;
+  }
+
+}

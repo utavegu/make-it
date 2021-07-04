@@ -1,0 +1,133 @@
+.main-header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__navigation-list {
+  .unordered-list;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #202020;
+  top: 50px;
+  left: 0;
+}
+
+.main-header__navigation-list.hidden {
+  display: none;
+}
+
+.main-header__navigation-item {
+  .main-typographic-theme;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.main-header__navigation-link {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-align: center;
+
+  &:hover {
+    color: #202020;
+  }
+}
+
+.main-header__open-menu-button {
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 1;
+
+  background-image: url(../../img/icons/menu_white_48dp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: 0.3s all linear;
+
+  margin-top: -11px;
+}
+
+.main-header__open-menu-button.is-opened {
+  background-image: url(../../img/icons/close_white_48dp.svg);
+}
+
+
+@media (min-width: 768px) {
+  .main-header__navigation-list {
+    .flex-container;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .main-header__navigation-item {
+    padding-right: 30px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .main-header__navigation-link {
+    padding: 0;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .main-header__open-menu-button {
+    visibility: hidden;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .main-header__navigation {
+    align-items: center
+  }
+
+  .main-header__logo {
+    width: 53px;
+    height: 30px;
+  }
+
+  .main-header__navigation-list {
+    margin-left: 101px;
+  }
+
+  .main-header__navigation-item {
+    .main-typographic-theme;
+    font-size: 18px;
+    line-height: 18px;
+    padding-right: 50px;
+    border: none;
+  }
+
+  .main-header__navigation-link {
+    // color: #fff;
+  }
+
+  .main-header__open-menu-button {
+    /*
+    margin-left: auto;
+    margin-right: -15px;
+    margin-top: -5px;
+    height: 10px;
+    visibility: hidden;
+    */
+  }
+
+
+}

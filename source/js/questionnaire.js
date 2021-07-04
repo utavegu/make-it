@@ -1,38 +1,6 @@
 'use strict';
 
-/* ---------- ANCHOR SCRIPT ---------- */
-
-const anchor = document.querySelector('.main-footer__anchor');
-
-const go = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-anchor.addEventListener('click', go);
-
-
-
-/* ---------- BURGER-MENU OPEN-CLOSE SCRIPT ---------- */
-
-const menuBurgerButton = document.querySelector(".main-header__open-menu-button");
-const headerNavigation = document.querySelector(".main-header__navigation-list");
-
-if (document.body.clientWidth <= 752) {
-  headerNavigation.classList.add("hidden");
-}
-
-menuBurgerButton.addEventListener("click", (evt) => {
-  evt.preventDefault();
-  headerNavigation.classList.toggle("hidden");
-  menuBurgerButton.classList.toggle("is-opened");
-})
-
-
-
-/* ---------- QUESTIONNAIRE SCRIPT ---------- */
+(function () {
 
 const openQuestionnaireButton = document.querySelector(".main-header__open-questionnaire-button");
 const questionnaireModule = document.querySelector(".main-header__questionnaire");
@@ -215,28 +183,4 @@ const addNextQuestion = () => {
 
 addNextQuestion();
 
-
-
-/* ---------- WHEEL-NAVIGATION SCRIPT ---------- */
-
-const ANIMATION_SPEED = 500;
-
-const parentContainer = document.querySelector(".wheel-menu__parent-container");
-const menuActivator = parentContainer.querySelector(".wheel-menu__open-button");
-const menu = parentContainer.querySelector(".wheel-menu__menu");
-
-menuActivator.addEventListener("click", (evt) => {
-  evt.preventDefault();
-  menuActivator.classList.toggle("activated");
-  if (menu.classList.contains("appeared")) {
-    menu.classList.toggle("appeared");
-    setTimeout(() => {
-      parentContainer.classList.remove("opened");
-    }, ANIMATION_SPEED);
-  } else {
-    parentContainer.classList.add("opened");
-    setTimeout(() => {
-      menu.classList.toggle("appeared");
-    }, ANIMATION_SPEED);
-  }
-})
+})();
