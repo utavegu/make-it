@@ -1,13 +1,10 @@
 .projects__project-list {
   .unordered-list;
-  .flex-container;
-  justify-content: center;
 }
 
 .projects__project-item {
   position: relative;
   padding: 20px;
-  max-width: 375px;
   min-height: 275px;
   display: flex;
   flex-direction: column;
@@ -151,6 +148,19 @@
 .projects__project-item--all-projects {
   display: none;
 }
+
+
+@media (min-width: 768px) {
+  .projects__project-list {
+    .flex-container;
+    justify-content: center;
+  }
+
+  .projects__project-item {
+    max-width: 375px;
+  }
+}
+
 
 
 
