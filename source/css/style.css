@@ -1015,25 +1015,8 @@ img {
   .main-header__open-questionnaire-button {
     top: 70%;
   }
-  .main-header__questionnaire {
-    position: absolute;
-    z-index: 10;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 30px 20px 20px 20px;
-    color: #202020;
-    background-color: #fff;
-  }
-  .main-header__questionnaire.hidden {
-    display: none;
-  }
   .questionnaire__inner {
     height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .questionnaire__slide--3 .questionnaire__suggestion-form-item {
     margin-bottom: 30px;
@@ -1045,149 +1028,36 @@ img {
     right: 36%;
   }
   .main-header__questionnaire {
-    position: absolute;
-    z-index: 10;
-    display: block;
-    top: 0;
-    right: 0;
     width: 40%;
     padding: 100px 100px 25px 50px;
-    color: #202020;
-    background-color: #fff;
-  }
-  .main-header__questionnaire.hidden {
-    display: none;
   }
   .questionnaire__inner {
     height: 98vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .questionnaire__suggestion-heading {
-    font-family: "gilroy-semibold", "Arial", "Helvetica", sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 36px;
     line-height: 43px;
-    margin: 0;
-    padding: 0;
   }
   .questionnaire__suggestion-content label {
-    font-family: "gilroy-regular", "Arial", "Helvetica", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
     font-size: 18px;
     line-height: 18px;
   }
   .questionnaire__suggestion-description {
-    font-family: "gilroy-regular", "Arial", "Helvetica", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
     font-size: 18px;
     line-height: 18px;
-    margin: 0;
-    padding: 0;
-  }
-  .questionnaire__inner input[type="text"],
-  .questionnaire__inner input[type="tel"],
-  .questionnaire__inner input[type="email"] {
-    border: none;
-    border-bottom: 1px solid #202020;
-    background-color: transparent;
-    outline: none;
-    width: 100%;
   }
   .questionnaire__slide--1 .questionnaire__suggestion-content {
     margin-top: 50px;
   }
   .questionnaire__slide--1 .questionnaire__suggestion-unit-heading {
-    font-family: "gilroy-medium", "Arial", "Helvetica", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0em;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
-    padding: 0;
   }
   .questionnaire__slide--1 .questionnaire__suggestion-description {
     font-size: 16px;
     line-height: 21px;
-    margin: 0;
-    margin-top: 5px;
-    padding: 0;
-  }
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item:last-child {
-    margin-bottom: 0;
-  }
-  .questionnaire__slide--1 .questionnaire__suggestion-form-item label {
-    margin-right: 20px;
-  }
-  .questionnaire__custom-checkbox {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    border: 1px solid #000;
-    border-radius: 2px;
-  }
-  .questionnaire__checkbox:checked + .questionnaire__custom-checkbox {
-    background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L6 8.5L13.5 1' stroke='black'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .questionnaire__checkbox:focus + .questionnaire__custom-checkbox {
-    outline: none;
-  }
-  .questionnaire__slide--2 .questionnaire__suggestion-content {
-    margin-top: 173px;
-  }
-  .questionnaire__slide--2 .questionnaire__suggestion-form-item,
-  .questionnaire__slide--3 .questionnaire__suggestion-form-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .questionnaire__slide--3 .questionnaire__suggestion-content {
-    margin-top: 100px;
   }
   .questionnaire__slide--3 .questionnaire__suggestion-form-item {
     margin-bottom: 50px;
-  }
-  .questionnaire__slide--4 .questionnaire__suggestion-content {
-    margin-top: 20px;
-  }
-  .questionnaire__buttons-block {
-    flex-grow: 1;
-    display: flex;
-  }
-  .questionnaire__buttons-block .button-next {
-    margin-top: auto;
-    background-color: #202020;
-    cursor: pointer;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 28px;
-    height: 17px;
-  }
-  .questionnaire__buttons-block .button-close {
-    margin-top: auto;
-    background-color: #202020;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 21L11 11M21 1L11 11M11 11L21 21L1 1' stroke='white'/%3E%3C/svg%3E%0A");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -1197,7 +1067,6 @@ img {
 }
 @media (min-width: 1650px) {
   .main-header__questionnaire {
-    width: 40%;
     padding: 130px 200px 40px 100px;
   }
   .questionnaire__inner {
@@ -1668,16 +1537,32 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../img/metatron-detail-group.png);
-  /*
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url(../../img/metatron-detail-group@2x.png);
-  }
-  */
+  background-image: url(../../../img/metatron-detail-group.png);
+  background-size: 98px auto;
   width: 98px;
   height: 127px;
   top: 74px;
   left: 57px;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-group@1.5x.png);
+  }
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-group@2x.png);
+  }
+}
+@media (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-group@3x.png);
+  }
+}
+@media (min-resolution: 384dpi), (min-resolution: 4dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-group@4x.png);
+  }
 }
 .projects__project-item--finance {
   background-color: #00338D;
@@ -1755,12 +1640,8 @@ img {
     left: 71%;
   }
   .projects__project-item--metatron::after {
-    background-image: url(../../img/metatron-detail-big.png);
-    /*
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url(../../img/metatron-detail-group@2x.png);
-    }
-    */
+    background-image: url(../../../img/metatron-detail-big.png);
+    background-size: 210px auto;
     width: 210px;
     height: 202px;
     top: 244px;
@@ -1771,12 +1652,8 @@ img {
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../img/metatron-detail-mini.png);
-    /*
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url(../../img/metatron-detail-group@2x.png);
-    }
-    */
+    background-image: url(../../../img/metatron-detail-mini.png);
+    background-size: 173px auto;
     width: 173px;
     height: 98px;
     top: 145px;
@@ -1835,6 +1712,46 @@ img {
     width: 300px;
     top: 25%;
     left: 67%;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-big@1.5x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-big@2x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-big@3x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 384dpi), (min-width: 1200px) and (min-resolution: 4dppx) {
+  .projects__project-item--metatron::after {
+    background-image: url(../../../img/metatron-detail-big@4x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .projects__project-item--metatron::before {
+    background-image: url(../../../img/metatron-detail-mini@1.5x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .projects__project-item--metatron::before {
+    background-image: url(../../../img/metatron-detail-mini@2x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
+  .projects__project-item--metatron::before {
+    background-image: url(../../../img/metatron-detail-mini@3x.png);
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 384dpi), (min-width: 1200px) and (min-resolution: 4dppx) {
+  .projects__project-item--metatron::before {
+    background-image: url(../../../img/metatron-detail-mini@4x.png);
   }
 }
 .wishes {
