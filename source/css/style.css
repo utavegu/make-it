@@ -607,7 +607,7 @@ img {
   min-width: 100px;
   min-height: 100px;
   cursor: pointer;
-  background-image: url("../img/icons/arrow-right-black.svg");
+  background-image: url(../img/icons/arrow-right-black.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -623,7 +623,7 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../img/make_mobile.svg);
+  background-image: url(../../../img/make_mobile.svg);
   width: 329px;
   height: 109px;
   right: 0;
@@ -648,7 +648,7 @@ img {
     padding: 50px 200px 180px;
   }
   .main-header::before {
-    background-image: url(../../img/make_desktop.svg);
+    background-image: url(../../../img/make_desktop.svg);
     width: 857px;
     height: 216px;
     top: 90px;
@@ -708,14 +708,14 @@ img {
   margin: 0;
   cursor: pointer;
   z-index: 1;
-  background-image: url(../../img/icons/menu_white_48dp.svg);
+  background-image: url(../../../img/icons/menu_white_48dp.svg);
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.3s all linear;
   margin-top: -11px;
 }
 .main-header__open-menu-button.is-opened {
-  background-image: url(../../img/icons/close_white_48dp.svg);
+  background-image: url(../../../img/icons/close_white_48dp.svg);
 }
 @media (min-width: 768px) {
   .main-header__navigation-list {
@@ -866,10 +866,10 @@ img {
   z-index: 11;
 }
 .main-header__open-questionnaire-button:hover {
-  background-image: url(../../img/icons/arrow-right-black.svg), linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
+  background-image: url(../../../img/icons/arrow-right-black.svg), linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
 }
 .main-header__open-questionnaire-button.is-opened {
-  background-image: url(../../img/icons/close_default.svg);
+  background-image: url(../../../img/icons/close_default.svg);
 }
 .main-header__questionnaire {
   position: absolute;
@@ -1522,7 +1522,7 @@ img {
   right: 20px;
   width: 18px;
   height: 11px;
-  background-image: url(../../img/icons/card-small-link.svg);
+  background-image: url(../../../img/icons/card-small-link.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1827,7 +1827,7 @@ img {
   border-radius: 2px;
 }
 .feedback__checkbox:checked + .feedback__custom-checkbox {
-  background-image: url("../img/icons/mark.svg");
+  background-image: url("../../../img/icons/mark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
