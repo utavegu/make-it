@@ -5,9 +5,6 @@
 const openQuestionnaireButton = document.querySelector(".main-header__open-questionnaire-button");
 const questionnaireModule = document.querySelector(".main-header__questionnaire");
 
-// ВРЕМЕННО
-questionnaireModule.classList.remove("hidden");
-
 openQuestionnaireButton.addEventListener("click", (evt) => {
   evt.preventDefault();
   questionnaireModule.classList.toggle("hidden");
@@ -136,7 +133,7 @@ const storeAnswers = () => {
     }),
     {}
   );
-  console.log(answer)
+  // console.log(answer)
   answers.push(answer);
 };
 
@@ -166,7 +163,7 @@ const addButton = (icon, handler, classname = "button-next", type = "button") =>
 
 const onSubmit = () => {
   storeAnswers();
-  console.log("Для отправки на сервер: ", answers);
+  // console.log("Для отправки на сервер: ", answers);
   addNextQuestion();
   return false;
 };
