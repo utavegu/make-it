@@ -60,6 +60,12 @@
 
   .main-header__solutions-list {
     column-gap: 16px;
+    padding-bottom: 0;
+  }
+
+  .main-header__solutions-list::after {
+    bottom: -50px;
+    left: 500px;
   }
 
   .main-header__solution {
@@ -90,11 +96,10 @@
 
   .main-header__solutions-list::after {
     bottom: 50%;
-    right: -200px;
+    left: 650px;
     @media 
     (max-width: 1600px) {
       bottom: -80px;
-      right: -120px
     }
   }
 

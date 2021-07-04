@@ -835,6 +835,11 @@ img {
   }
   .main-header__solutions-list {
     column-gap: 16px;
+    padding-bottom: 0;
+  }
+  .main-header__solutions-list::after {
+    bottom: -50px;
+    left: 500px;
   }
   .main-header__solution {
     font-size: 16px;
@@ -856,7 +861,7 @@ img {
   }
   .main-header__solutions-list::after {
     bottom: 50%;
-    right: -200px;
+    left: 650px;
   }
   .main-header__solution-item--sites,
   .main-header__solution-item--marketing {
@@ -881,7 +886,6 @@ img {
 @media (min-width: 1200px) and (max-width: 1600px) {
   .main-header__solutions-list::after {
     bottom: -80px;
-    right: -120px;
   }
 }
 .main-header__open-questionnaire-button {
