@@ -21,6 +21,15 @@
   z-index: 1;
 }
 
+.main-header__solutions-list::after {
+  .pseudo-element;
+  width: 200px;
+  height: 1px;
+  background-image: url(../../../img/rail.svg);
+  bottom: -70px;
+  right: 0;
+}
+
 .main-header__solution-item:hover {
   border-radius: 55px;
   background: linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
@@ -76,6 +85,16 @@
   .main-header__solutions-list {
     column-gap: 20px;
     width: 601px;
+  }
+
+  .main-header__solutions-list::after {
+    bottom: 50%;
+    right: -200px;
+    @media 
+    (max-width: 1600px) {
+      bottom: -80px;
+      right: -120px
+    }
   }
 
   .main-header__solution-item--sites,

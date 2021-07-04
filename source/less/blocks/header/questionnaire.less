@@ -3,12 +3,6 @@
   top: 75%;
   right: 5%;
   z-index: 11;
-
-  &:hover {
-    background-image:
-      url(../../../img/icons/arrow-right-black.svg),
-      linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
-  }
 }
 
 .main-header__open-questionnaire-button.is-opened {
@@ -151,6 +145,24 @@
 .questionnaire__buttons-block {
   flex-grow: 1;
   display: flex;
+}
+
+.quest-button {
+  display: inline-block;
+  vertical-align: middle;
+
+  border-radius: 50%;
+  border: none;
+  
+  min-width: 100px;
+  min-height: 100px;
+  
+  cursor: pointer;
+
+  background-image: url(../img/icons/arrow-right-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 .questionnaire__buttons-block .button-next {

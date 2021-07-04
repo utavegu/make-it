@@ -154,7 +154,7 @@ const closeHandler = () => {
 const addButton = (icon, handler, classname = "button-next", type = "button") => {
   const buttonIcon = htmlToElement(icon);
   const button = document.createElement("button");
-  button.className = classname + " button";
+  button.className = classname + " quest-button";
   setAttributes(button, {"type": type, "form": "server"});
   button.addEventListener("click", handler);
   button.appendChild(buttonIcon);

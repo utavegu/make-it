@@ -612,6 +612,9 @@ img {
   background-repeat: no-repeat;
   background-color: #fff;
 }
+.button:hover {
+  background-image: url(../img/icons/arrow-right-white.svg), linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
+}
 .main-header {
   color: #ffffff;
   background-color: #202020;
@@ -798,6 +801,17 @@ img {
   margin-bottom: 20px;
   z-index: 1;
 }
+.main-header__solutions-list::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 1px;
+  background-image: url(../../../img/rail.svg);
+  bottom: -70px;
+  right: 0;
+}
 .main-header__solution-item:hover {
   border-radius: 55px;
   background: linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
@@ -839,6 +853,10 @@ img {
     column-gap: 20px;
     width: 601px;
   }
+  .main-header__solutions-list::after {
+    bottom: 50%;
+    right: -200px;
+  }
   .main-header__solution-item--sites,
   .main-header__solution-item--marketing {
     order: -3;
@@ -859,14 +877,17 @@ img {
     margin-left: 70px;
   }
 }
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .main-header__solutions-list::after {
+    bottom: -80px;
+    right: -120px;
+  }
+}
 .main-header__open-questionnaire-button {
   position: absolute;
   top: 75%;
   right: 5%;
   z-index: 11;
-}
-.main-header__open-questionnaire-button:hover {
-  background-image: url(../../../img/icons/arrow-right-black.svg), linear-gradient(90deg, #4158D0 0%, #C850C0 100%);
 }
 .main-header__open-questionnaire-button.is-opened {
   background-image: url(../../../img/icons/close_default.svg);
@@ -992,6 +1013,19 @@ img {
 .questionnaire__buttons-block {
   flex-grow: 1;
   display: flex;
+}
+.quest-button {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: none;
+  min-width: 100px;
+  min-height: 100px;
+  cursor: pointer;
+  background-image: url(../img/icons/arrow-right-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 .questionnaire__buttons-block .button-next {
   margin-top: auto;
