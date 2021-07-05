@@ -8,6 +8,8 @@ var plumber = require("gulp-plumber");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
+const ghPages = require('gh-pages');
+const path = require('path');
 
 gulp.task("development", function () {
   return gulp.src("source/less/style.less")
@@ -76,6 +78,11 @@ gulp.task("copy other", function() {
 		})
 		.pipe(gulp.dest("build"));
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("start", gulp.series(
   "development",
