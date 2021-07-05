@@ -1836,19 +1836,19 @@ img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: #336699;
+  background-color: #fff;
   position: absolute;
   top: calc(50% - 28px);
   right: calc(50% - 28px);
   border: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23FFFFFF'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23202020'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 .wheel-menu__open-button.activated {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23FFFFFF'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23202020'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
 }
 /* Меню */
 .wheel-menu__menu {
@@ -1883,7 +1883,6 @@ img {
   height: 160px;
   transform-origin: 100% 100%;
   overflow: hidden;
-  border: 1px solid #d2d2d2;
 }
 .wheel-menu__menu li::before {
   z-index: 1;
@@ -1900,37 +1899,37 @@ img {
   transform: rotate(0deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(1)::before {
-  content: "ПРИВЕТ";
+  content: "Подпись 1";
 }
 .wheel-menu__menu li:nth-child(2) {
   transform: rotate(60deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(2)::before {
-  content: "КАК";
+  content: "Подпись 2";
 }
 .wheel-menu__menu li:nth-child(3) {
   transform: rotate(120deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(3)::before {
-  content: "ДЕЛА?";
+  content: "Подпись 3";
 }
 .wheel-menu__menu li:nth-child(4) {
   transform: rotate(180deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(4)::before {
-  content: "КАК";
+  content: "Подпись 4";
 }
 .wheel-menu__menu li:nth-child(5) {
   transform: rotate(240deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(5)::before {
-  content: "ПОГОДА?";
+  content: "Подпись 5";
 }
 .wheel-menu__menu li:nth-child(6) {
   transform: rotate(300deg) skew(30deg);
 }
 .wheel-menu__menu li:nth-child(6)::before {
-  content: "АЗАЗА";
+  content: "Подпись 6";
 }
 .wheel-menu__menu li a {
   display: block;
