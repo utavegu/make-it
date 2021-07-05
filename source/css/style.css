@@ -331,14 +331,6 @@ template {
 [hidden] {
   display: none;
 }
-/*
-@light-background: #eee8e6;
-@dark-background: #343235;
-@dark-brown-color: #695a59;
-@light-brown-color: #a78587;
-@pastel-color: #eee9e6;
-@ghost-color: #eae1dc;
-*/
 .main-typographic-theme {
   font-family: "gilroy-medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
@@ -381,31 +373,6 @@ template {
   flex-wrap: wrap;
   flex-shrink: 0;
 }
-/*
-.small-text {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.ghost {
-  z-index: -1;
-  font-size: 140px;
-  line-height: 110px;
-  color: @ghost-color;
-  top: -20px;
-  left: -99px;
-}
-
-.light-scheme {
-  background-color: @light-background;
-  color: @dark-brown-color;
-}
-
-.dark-scheme {
-  background-color: @dark-background;
-  color: @pastel-color;
-}
-*/
 html {
   box-sizing: border-box;
 }
@@ -617,15 +584,6 @@ img {
     line-height: 18px;
     padding-right: 50px;
     border: none;
-  }
-  .main-header__open-menu-button {
-    /*
-    margin-left: auto;
-    margin-right: -15px;
-    margin-top: -5px;
-    height: 10px;
-    visibility: hidden;
-    */
   }
 }
 .main-header__solutions {
