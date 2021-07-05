@@ -443,7 +443,7 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../../img/make_mobile.svg);
+  background-image: url(../../../img/makemobile.svg);
   width: 329px;
   height: 109px;
   right: 0;
@@ -468,7 +468,7 @@ img {
     padding: 50px 200px 180px;
   }
   .main-header::before {
-    background-image: url(../../../img/make_desktop.svg);
+    background-image: url(../../../img/makedesktop.svg);
     width: 857px;
     height: 216px;
     top: 90px;
