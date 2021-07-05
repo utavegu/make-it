@@ -703,7 +703,7 @@ img {
   z-index: 11;
 }
 .main-header__open-questionnaire-button.is-opened {
-  background-image: url(../../../img/icons/close_default.svg);
+  background-image: url(../img/icons/close_default.svg);
 }
 .main-header__questionnaire {
   position: absolute;
