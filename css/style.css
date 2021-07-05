@@ -1379,7 +1379,7 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../../img/metatron-detail-group.png);
+  background-image: url(../../../img/metatrondetailgroup.png);
   background-size: 98px auto;
   width: 98px;
   height: 127px;
@@ -1388,22 +1388,22 @@ img {
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-group@1.5x.png);
+    background-image: url(../../../img/metatrondetailgroup@1.5x.png);
   }
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-group@2x.png);
+    background-image: url(../../../img/metatrondetailgroup@2x.png);
   }
 }
 @media (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-group@3x.png);
+    background-image: url(../../../img/metatrondetailgroup@3x.png);
   }
 }
 @media (min-resolution: 384dpi), (min-resolution: 4dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-group@4x.png);
+    background-image: url(../../../img/metatrondetailgroup@4x.png);
   }
 }
 .projects__project-item--finance {
@@ -1493,7 +1493,7 @@ img {
     left: 71%;
   }
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-big.png);
+    background-image: url(../../../img/metatrondetailbig.png);
     background-size: 210px auto;
     width: 210px;
     height: 202px;
@@ -1505,7 +1505,7 @@ img {
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../../img/metatron-detail-mini.png);
+    background-image: url(../../../img/metatrondetailmini.png);
     background-size: 173px auto;
     width: 173px;
     height: 98px;
@@ -1569,42 +1569,42 @@ img {
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-big@1.5x.png);
+    background-image: url(../../../img/metatrondetailbig@1.5x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-big@2x.png);
+    background-image: url(../../../img/metatrondetailbig@2x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-big@3x.png);
+    background-image: url(../../../img/metatrondetailbig@3x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 384dpi), (min-width: 1200px) and (min-resolution: 4dppx) {
   .projects__project-item--metatron::after {
-    background-image: url(../../../img/metatron-detail-big@4x.png);
+    background-image: url(../../../img/metatrondetailbig@4x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .projects__project-item--metatron::before {
-    background-image: url(../../../img/metatron-detail-mini@1.5x.png);
+    background-image: url(../../../img/metatrondetailmini@1.5x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .projects__project-item--metatron::before {
-    background-image: url(../../../img/metatron-detail-mini@2x.png);
+    background-image: url(../../../img/metatrondetailmini@2x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
   .projects__project-item--metatron::before {
-    background-image: url(../../../img/metatron-detail-mini@3x.png);
+    background-image: url(../../../img/metatrondetailmini@3x.png);
   }
 }
 @media (min-width: 1200px) and (min-resolution: 384dpi), (min-width: 1200px) and (min-resolution: 4dppx) {
   .projects__project-item--metatron::before {
-    background-image: url(../../../img/metatron-detail-mini@4x.png);
+    background-image: url(../../../img/metatrondetailmini@4x.png);
   }
 }
 .wishes {
